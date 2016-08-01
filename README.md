@@ -1,7 +1,4 @@
 # fedarko.github.io
-My website (sort of). Accessible at http://mfedarko.me/.
+My website. Accessible at https://fedarko.github.io/.
 
-It's hosted through [Namecheap](http://www.namecheap.com/), using GitHub
-Pages.
-
-Right now it's very simplistic. I'll probably do more with it in the future!
+Right now it's fairly simple. More interesting things to come later, maybe?
