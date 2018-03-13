@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport"
+            content="width=device-width,initial-scale=1,user-scalable=no" />
+        <title>South Florida Food Web Visualization</title>
+        <link rel="stylesheet" href="css/foodweb.css">
+        <script src="js/cytoscape.min.js"></script>
+        <script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.js"></script>
+        <script src="js/cytoscape-dagre.js"></script>
+        <script src="https://cdn.rawgit.com/OpenKieler/klayjs/0.4.1/klay.js"></script>
+        <script src="js/cytoscape-klay.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <select id="networkselector" class="ctrlele">
+            <option value="baydry">Florida Bay, dry</option>
+            <option value="baywet">Florida Bay, wet</option>
+            <option value="cypdry">Cypress, dry</option>
+            <option value="cypwet">Cypress, wet</option>
+            <option value="gramdry">Everglades Graminoids, dry</option>
+            <option value="gramwet">Everglades Graminoids, wet</option>
+            <option value="mangdry">Mangrove Estuary, dry</option>
+            <option value="mangwet">Mangrove Estuary, wet</option>
+        </select>
+        <button id="networkbutton" onclick="updateNetwork();" class="ctrlele">
+            Load specified network</button>
+
+        <select id="layoutselector" class="ctrlele">
+            <option value="cose">cose</option>
+            <option value="breadthfirst">breadthfirst</option>
+            <option value="circle">circle</option>
+            <option value="concentric">concentric</option>
+            <option value="dagre">dagre (resource-intensive)</option>
+            <option value="grid">grid</option>
+            <option value="klay">klay (resource-intensive)</option>
+            <option value="random">random</option>
+        </select>
+        <button id="layoutbutton" onclick="updateLayout();" class="ctrlele"
+            disabled>Rerun layout</button>
+
+        <button id="magiclensbutton" onclick="toggleMagicLensMode();"
+                class="ctrlele" disabled>Begin magic lens mode</button>
+        <button id="helptogglebutton" onclick="toggleMagicLensHelpText();"
+                class="ctrlele">Magic lens help</button>
+        <div id="helptext">
+            <p>
+                Select nodes in the graph to view their incident
+                edges.
+            </p>
+            <p>
+                On a desktop computer, multiple nodes can be selected at
+                once through holding down the CTRL or SHIFT keys.
+            </p>
+            <p>
+                You can also select multiple nodes through dragging a box. On a
+                desktop computer, you can do this by
+                holding down CTRL or SHIFT and dragging with the mouse; on a
+                touch-enabled device, you can do this via a "three-finger swipe."
+            </p>
+        </div>
+        <div id="cy"></div>
+        <script src="js/foodweb.js"></script>
+    </body>
+</html>
