@@ -7,7 +7,7 @@
     top: 0;
 }
 
-.ctrlele, #helptext {
+.ctrlele, #helptext, #datasource {
     position: fixed;
     z-index: 10;
 }
@@ -46,4 +46,8 @@
     width: 15em;
     display: none;
     border: 1px solid black;
+}
+#datasource {
+    top: 0em;
+    right: 0.5em;
 }
