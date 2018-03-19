@@ -4,5 +4,9 @@ body {
     line-height: 1.4;
     color: #333;
     padding: 0 1em;
-    font-family: "Times New Roman", serif;
+    font-family: "Times New Roman", Times, serif;
+}
+.eaddr {
+    font-size: medium;
+    font-family: monospace;
 }
