@@ -12,3 +12,10 @@ body {
     font-size: medium;
     font-family: monospace;
 }
+.desc {
+    text-indent: 2em;
+}
+/* Based on https://stackoverflow.com/questions/11903773/add-space-between-li-elements/11903886#comment88753789_11903886. */
+li:not(:last-child) {
+    margin-bottom: 1em;
+}
