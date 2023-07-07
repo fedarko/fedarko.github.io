@@ -15,6 +15,9 @@ body {
 .desc {
     margin-left: 2em;
 }
+.sb {
+    font-weight: bold;
+}
 /* Based on https://stackoverflow.com/questions/11903773/add-space-between-li-elements/11903886#comment88753789_11903886. */
 li:not(:last-child) {
     margin-bottom: 1em;
