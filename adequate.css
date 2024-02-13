@@ -5,6 +5,8 @@ body {
     max-width: 40em;
     line-height: 1.4;
     color: #333;
+    /* gentler default, closer to the middle of our rand color range */
+    background-color: rgb(240, 240, 240);
     /* Prevent FOUC: https://stackoverflow.com/a/66010659 */
     opacity: 0;
     /* Accompanies the above, and removes background color flickering on
