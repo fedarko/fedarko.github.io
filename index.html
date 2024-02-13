@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="adequate.css" />
     </head>
     <body>
+        <script src="js/randcolor.js" async></script>
         <h2>Marcus W. Fedarko</h2>
         <p>
             Hi! I'm a grad student in computer science at the
@@ -34,7 +35,7 @@
 
         <p>
             I can be reached via email at&nbsp;
-            <span class="eaddr">mfedarko (at) ucsd (dot) edu</span>.
+            <span class="monotext">mfedarko (at) ucsd (dot) edu</span>.
         </p>
 
         <h3>Research projects</h3>
@@ -191,5 +192,8 @@
             </li>
             -->
         </ul>
+        <!-- make body visible (undo FOUC prevention effects): from
+             https://stackoverflow.com/a/66010659 -->
+        <style>body { opacity: 1 !important; }</style>
     </body>
 </html>

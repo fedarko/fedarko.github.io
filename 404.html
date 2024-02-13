@@ -2,6 +2,10 @@
 <html>
     <!-- No, seriously, how did you end up here? -->
     <head>
+        <!-- 2024 update: IIRC, the reason we use absolute links for the hrefs
+             here is that even if the user types in some wack extra directory
+             structure (e.g. "fedarko.github.io/this/is/not/real"), the
+             resources can still be loaded. -->
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <meta name="author" content="Marcus Fedarko" />
         <title>404 Error</title>
@@ -10,16 +14,20 @@
         <link rel="stylesheet" type="text/css" href="https://fedarko.github.io/adequate.css" />
     </head>
     <body>
+        <script src="https://fedarko.github.io/js/randcolor.js" async></script>
         <h1>404 Error</h1>
-        <p>Sorry! It looks like you're trying to access a page that doesn't exist.</p>
-        <p>Considering this site literally has one page (well, technically two pages if you count this
-        one, I guess), I don't know how or why you did that. It's a bit disconcerting.</p>
-        <p>Click <a href="http://fedarko.github.io">here</a> to be taken back to the index page of my site,
-        or feel free to email me at <pre>mfedarko (at) umd (dot) edu</pre> with
-        questions/concerns/suggestions on how to make this website/404 page better.</p>
+        <p>Oh no! This page doesn't exist (unless you were specifically like
+        "nah, let me type in <span class="monotext">404.html</span> in the URL,"
+        which I somehow doubt).</p>
+
+        <p>Click <a href="http://fedarko.github.io">here</a> to be taken back
+        to the index page of this site. You weirdo.</p>
 
         <img src="https://fedarko.github.io/res/images/Sami.jpg" width="324" height="182" alt="A picture of Sami" />
         <br />
-        Here's a picture of my cat for your troubles. &lt;3
+        Also here's a picture of Sami.
+        <!-- make body visible (undo FOUC prevention effects): from
+             https://stackoverflow.com/a/66010659 -->
+        <style>body { opacity: 1 !important; }</style>
     </body>
 </html>
