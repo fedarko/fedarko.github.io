@@ -9,8 +9,8 @@ body {
     opacity: 0;
     /* Accompanies the above, and removes background color flickering on
      * when repeatedly refreshing the page. Interestingly, this doesn't
-     * actually show a fade-in; I think this is because of the "async" tags
-     * used on the randcolor.js <script> tags. Wack.
+     * always show a fade-in (at least on Chromium?); I think this is because
+     * of the "async" attributes of the randcolor.js <script> tags. Wack.
      * https://stackoverflow.com/questions/3221561#comment129519385_66010659
      */
     transition: all 0.5s;
