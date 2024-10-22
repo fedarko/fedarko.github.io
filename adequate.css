@@ -24,6 +24,7 @@ body {
     font-family: monospace;
 }
 .desc {
+    margin-top: 0.1em;
     margin-left: 2em;
 }
 .sb {
@@ -32,4 +33,39 @@ body {
 /* Based on https://stackoverflow.com/questions/11903773/add-space-between-li-elements/11903886#comment88753789_11903886. */
 li:not(:last-child) {
     margin-bottom: 1em;
+}
+
+.outlink {
+    border-radius: 5px;
+    border: 2px solid;
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: 3px;
+    padding: 3px;
+}
+
+.opaper {
+    background-color: #514cc2;
+    border-color: #1d196e;
+}
+.opaper::before {
+    content: "Paper";
+}
+
+.oposter {
+    background-color: #1f7840;
+    border-color: #0d4020;
+}
+.oposter::before {
+    content: "Poster";
+}
+
+.ocode {
+    background-color: #c43939;
+    border-color: #590d0d;
+}
+.ocode::before {
+    content: "Code";
 }
