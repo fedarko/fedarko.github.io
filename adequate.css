@@ -5,18 +5,8 @@ body {
     max-width: 40em;
     line-height: 1.4;
     color: #333;
-    /* gentler default, closer to the middle of our rand color range */
-    background-color: rgb(240, 240, 240);
-    /* Prevent FOUC: https://stackoverflow.com/a/66010659 */
-    opacity: 0;
-    /* Accompanies the above, and removes background color flickering on
-     * when repeatedly refreshing the page. Interestingly, this doesn't
-     * always show a fade-in (at least on Chromium?); I think this is because
-     * of the "async" attributes of the randcolor.js <script> tags. Wack.
-     * https://stackoverflow.com/questions/3221561#comment129519385_66010659
-     */
-    transition: all 0.5s;
-    padding: 0 1em;
+    /* gentler default background color */
+    background-color: #e6e9fe;
     font-family: "Times New Roman", Times, serif;
 }
 .monotext {
@@ -35,6 +25,23 @@ li:not(:last-child) {
     margin-bottom: 1em;
 }
 
+/* https://stackoverflow.com/a/10487968 */
+ul,
+li {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+li:first-child {
+    margin-top: 1em;
+}
+
+li:first-line {
+    font-weight: bold;
+}
+
 .outlink {
     border-radius: 5px;
     border: 2px solid;
@@ -46,6 +53,10 @@ li:not(:last-child) {
     padding: 3px;
 }
 
+/* Background / border colors laboriously picked by googling "hex color picker"
+ * and trying stuff out for five minutes until things look good. Graphic design
+ * is my passion
+ */
 .opaper {
     background-color: #514cc2;
     border-color: #1d196e;
@@ -62,10 +73,29 @@ li:not(:last-child) {
     content: "Poster";
 }
 
+.oslides {
+    background-color: #cc7104;
+    border-color: #8f5003;
+}
+.oslides::before {
+    content: "Slides";
+}
+
 .ocode {
     background-color: #c43939;
     border-color: #590d0d;
 }
 .ocode::before {
     content: "Code";
+}
+
+/* Other categories of "outlinks" that don't have fixed names */
+.othesis {
+    background-color: #6e3419;
+    border-color: #2b0f03;
+}
+
+.omisc {
+    background-color: #172fa6;
+    border-color: #0a1340;
 }
