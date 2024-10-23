@@ -31,7 +31,7 @@ li:not(:last-child) {
     margin-bottom: 1em;
 }
 
-/* https://stackoverflow.com/a/10487968 */
+/* Remove ul/li indentation: from https://stackoverflow.com/a/12426634 */
 ul,
 li {
     list-style-type: none;
