@@ -3,6 +3,12 @@ body {
      * by Drew McConville and Gabe Hammersmith. */
     margin: 2em auto;
     max-width: 40em;
+    /* the 1em padding on the left and right ensures that the text doesn't hit
+     * the side of the browser window, even on tiny screens like phones. (or
+     * normal computer browser windows when you resize them to phone-like
+     * dimensions to test things. that works too.)
+     */
+    padding: 0 1em;
     line-height: 1.4;
     color: #333;
     /* gentler default background color */
