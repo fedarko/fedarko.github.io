@@ -55,6 +55,13 @@ li:first-child {
 /* fancy button-like formatting for standard types of links -- for
  * papers, posters, code, slides, etc. This is kind of reinventing the wheel
  * but i don't wanna import some css library when i can just do it myself
+ *
+ * "white-space: nowrap;" prevents these from being broken across lines at
+ * spaces. It's not really a problem if that happens but it looks slightly
+ * ugly to see these button-like things split in half (I guess generally
+ * we think of buttons as being, like, "atomic" structures that can't
+ * be split up in this way). this particular CSS trick from
+ * https://old.reddit.com/r/webdev/comments/uwuheu/how/i9tx9f2/
  */
 .outlink {
     border-width: 2px;
@@ -67,6 +74,7 @@ li:first-child {
     margin-left: 3px;
     padding: 3px;
     user-select: none;
+    white-space: nowrap;
 }
 
 /* make these links look more like buttons, by making them darker when you
