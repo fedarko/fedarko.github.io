@@ -15,17 +15,21 @@ body {
     background-color: #e6e9fe;
     font-family: "Times New Roman", Times, serif;
 }
+
 .monotext {
     font-size: medium;
     font-family: monospace;
 }
+
 .desc {
     margin-top: 0.1em;
     margin-left: 2em;
 }
+
 .sb {
     font-weight: bold;
 }
+
 /* Based on https://stackoverflow.com/questions/11903773/add-space-between-li-elements/11903886#comment88753789_11903886. */
 li:not(:last-child) {
     margin-bottom: 1em;
@@ -44,7 +48,7 @@ li:first-child {
     margin-top: 1em;
 }
 
-li:first-line {
+.name {
     font-weight: bold;
 }
 
@@ -62,6 +66,7 @@ li:first-line {
     font-weight: bold;
     margin-left: 3px;
     padding: 3px;
+    user-select: none;
 }
 
 /* make these links look more like buttons, by making them darker when you
