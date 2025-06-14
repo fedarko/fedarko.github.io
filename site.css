@@ -90,8 +90,8 @@ li:first-child {
  */
 .oscholar,
 .opaper {
-    background-color: #514cc2;
-    border-color: #1d196e;
+    background-color: #196ce6;
+    border-color: #0f3163;
 }
 .opaper::before {
     content: "Paper";
