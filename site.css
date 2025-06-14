@@ -84,14 +84,11 @@ li:first-child {
     filter: brightness(90%);
 }
 
-.outlink:active {
-    filter: brightness(83%);
-}
-
 /* Background / border colors laboriously picked by googling "hex color picker"
  * and trying stuff out for five minutes until things look good. Graphic design
  * is my passion
  */
+.oscholar,
 .opaper {
     background-color: #514cc2;
     border-color: #1d196e;
@@ -116,6 +113,7 @@ li:first-child {
     content: "Slides";
 }
 
+.ogithub,
 .ocode {
     background-color: #c43939;
     border-color: #590d0d;
@@ -125,6 +123,7 @@ li:first-child {
 }
 
 /* Other categories of "outlinks" that don't have fixed names */
+.ocv,
 .orpt {
     background-color: #6e3419;
     border-color: #2b0f03;
