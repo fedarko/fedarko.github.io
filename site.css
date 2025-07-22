@@ -105,6 +105,10 @@ li:first-child {
     content: "Poster";
 }
 
+.oslides-noname {
+    background-color: #cc7104;
+    border-color: #8f5003;
+}
 .oslides {
     background-color: #cc7104;
     border-color: #8f5003;
