@@ -52,6 +52,19 @@ li:first-child {
     font-weight: bold;
 }
 
+.daterange {
+    font-family: monospace;
+    font-weight: bold;
+    color: #606;
+    font-size: 1.1em;
+}
+.daterange::before {
+    content: "[";
+}
+.daterange::after {
+    content: "]";
+}
+
 /* fancy button-like formatting for standard types of links -- for
  * papers, posters, code, slides, etc. This is kind of reinventing the wheel
  * but i don't wanna import some css library when i can just do it myself
