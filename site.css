@@ -1,19 +1,27 @@
 body {
     /* Body styling adapted from http://bettermotherfuckingwebsite.com/,
      * by Drew McConville and Gabe Hammersmith. */
-    margin: 2em auto;
+    margin: 0 auto;
     max-width: 40em;
-    /* the 1em padding on the left and right ensures that the text doesn't hit
-     * the side of the browser window, even on tiny screens like phones. (or
-     * normal computer browser windows when you resize them to phone-like
-     * dimensions to test things. that works too.)
-     */
-    padding: 0 1em;
+    padding: 2em;
     line-height: 1.4;
-    color: #333;
-    /* gentler default background color */
-    background-color: #e6e9fe;
+    color: #f3f3f3;
+    background-color: #0a3300;
     font-family: "Times New Roman", Times, serif;
+}
+
+#content {
+    background-color: #042200;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+a {
+    color: #0e0;
+}
+
+a:active {
+    color: #0a0;
 }
 
 .monotext {
@@ -55,7 +63,7 @@ li:first-child {
 .daterange {
     font-family: monospace;
     font-weight: bold;
-    color: #606;
+    color: #f355f3;
     font-size: 1.1em;
 }
 .daterange::before {
@@ -63,6 +71,9 @@ li:first-child {
 }
 .daterange::after {
     content: "]";
+}
+.daterange:hover {
+    color: #fa33fa;
 }
 
 /* fancy button-like formatting for standard types of links -- for
@@ -80,7 +91,8 @@ li:first-child {
     border-width: 2px;
     border-style: solid;
     border-radius: 5px;
-    color: white;
+    /* Override what we set as the custom "a" colors */
+    color: white !important;
     text-decoration: none;
     font-family: monospace;
     font-weight: bold;
