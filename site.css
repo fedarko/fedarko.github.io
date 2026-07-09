@@ -24,6 +24,12 @@ a:active {
     color: #0a0;
 }
 
+/* Since there is already a lot of empty space at the top of the page,
+ * override browsers' default top margins for h1 headers. */
+h1 {
+    margin-top: 0;
+}
+
 .monotext {
     font-size: medium;
     font-family: monospace;
