@@ -20,8 +20,8 @@ a {
     color: #0e0;
 }
 
-a:active {
-    color: #0a0;
+a:hover {
+    color: #0b0;
 }
 
 /* Since there is already a lot of empty space at the top of the page,
