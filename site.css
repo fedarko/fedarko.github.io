@@ -5,23 +5,58 @@ body {
     max-width: 40em;
     padding: 1em;
     line-height: 1.4;
-    color: #f3f3f3;
-    background-color: #0a3300;
     font-family: "Times New Roman", Times, serif;
 }
 
 #content {
-    background-color: #042200;
     padding: 1em;
     border-radius: 1em;
 }
 
+/* dark color scheme, by default; see
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme
+ */
+body {
+    color: #f3f3f3;
+    background-color: #0a3300;
+}
+#content {
+    background-color: #021000;
+}
 a {
-    color: #0e0;
+    color: #00fafa;
+}
+a:hover {
+    color: #0cc;
+}
+.daterange {
+    color: #f355f3;
+}
+.daterange:hover {
+    color: #d833d8;
 }
 
-a:hover {
-    color: #0b0;
+/* switch to light color scheme if requested */
+@media (prefers-color-scheme: light) {
+    body {
+        color: #111;
+        background-color: #ded;
+    }
+    #content {
+        background-color: #bdb;
+    }
+    a {
+        color: #0833dc;
+    }
+    a:hover {
+        color: #0500aa;
+    }
+    .daterange {
+        color: #b3b;
+    }
+    .daterange:hover {
+        color: #818;
+    }
 }
 
 /* Since there is already a lot of empty space at the top of the page,
@@ -69,7 +104,6 @@ li:first-child {
 .daterange {
     font-family: monospace;
     font-weight: bold;
-    color: #f355f3;
     font-size: 1.1em;
 }
 .daterange::before {
@@ -77,9 +111,6 @@ li:first-child {
 }
 .daterange::after {
     content: "]";
-}
-.daterange:hover {
-    color: #fa33fa;
 }
 
 /* fancy button-like formatting for standard types of links -- for
