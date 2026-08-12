@@ -40,10 +40,10 @@ a:hover {
 @media (prefers-color-scheme: light) {
     body {
         color: #111;
-        background-color: #ded;
+        background-color: #ddc;
     }
     #content {
-        background-color: #bdb;
+        background-color: #ced9be;
     }
     a {
         color: #0833dc;
