@@ -17,11 +17,11 @@ body {
  * https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme
  */
 body {
-    color: #f3f3f3;
-    background-color: #0a3300;
+    color: #fdfdfd;
+    background-color: #322;
 }
 #content {
-    background-color: #021000;
+    background-color: #211;
 }
 a {
     color: #00fafa;
